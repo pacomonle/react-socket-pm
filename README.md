@@ -19,6 +19,8 @@ Starting with 3.0, express applications have become request handler functions th
 
 # instalar Heroku cli -> https://devcenter.heroku.com/articles/heroku-cli
 
+# heroku logs -n 1000 --tail (para ver los ultimos 1000 logs y hacer el seguimiento)
+
 # git init (para inicializar el repositorio)
 
 # git add .
