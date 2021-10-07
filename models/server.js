@@ -3,6 +3,8 @@ const express = require('express');
 const http = require('http');
 const sockteio = require('socket.io');
 const path = require('path'); // para trabajar con directorios y no la raiz (__dirname)
+const cors = require('cors');
+
 const Sockets = require('./sockets');
 
 
@@ -27,7 +29,10 @@ class Server {
     // metodos middlewares
     middlewares() {
         // desplegar directorio publico -> use middleware
-        this.app.use(express.static(path.resolve(__dirname, '../public')))
+        this.app.use(express.static(path.resolve(__dirname, '../public')));
+
+        // CORS
+        this.app.use(cors());
     }
 
     // metodo para inicializar la aplicacion

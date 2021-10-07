@@ -10,6 +10,8 @@
 
 # npm i dotenv (trabajar variables de entrono)
 
+# npm i cors (habilitar cors)
+
 #########################
 In conjunction with Express
 Starting with 3.0, express applications have become request handler functions that you pass to http or http Server instances. You need to pass the Server to socket.io, and not the express application function. Also make sure to call .listen on the server, not the app.
